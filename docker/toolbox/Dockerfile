@@ -1,3 +1,3 @@
-FROM alpine:3.12
-RUN apk add --update --no-cache wget
+FROM alpine
+RUN apk add --update --no-cache bash
 CMD tail -f /dev/null
