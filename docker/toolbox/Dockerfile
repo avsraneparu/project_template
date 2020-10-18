@@ -1,3 +1,2 @@
 FROM ubuntu:20.04
-RUN apt-get update && apt-get upgrade && apt-get add bash
-COPY . ./app
+RUN apt update && apt upgrade && apt-get install mc
