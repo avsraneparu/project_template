@@ -1,3 +1,3 @@
 FROM ubuntu:18.04
-RUN apt update && apk upgrade && apk add bash
+RUN apt-get update && apt-get upgrade && apt-get add bash
 COPY . ./app
