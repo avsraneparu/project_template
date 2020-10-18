@@ -1,2 +1,2 @@
-FROM node:12.10.0-alpine
+FROM alpine
 RUN apk add python
