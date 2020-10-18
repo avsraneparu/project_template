@@ -1,2 +1,2 @@
-FROM alpine
+FROM ubuntu
 RUN apk add python
