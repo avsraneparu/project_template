@@ -1,3 +1,4 @@
 FROM alpine
-RUN apk add --no-cache curl wget busybox-extras netcat-openbsd python py-pip
+RUN apk -U upgrade
+RUN apk add curl wget busybox busybox-extras python py-pip bash
 CMD tail -f /dev/null
