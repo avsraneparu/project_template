@@ -1,4 +1,3 @@
-FROM alpine
-RUN apk -U upgrade
-RUN apk add curl wget busybox busybox-extras python py-pip bash
+FROM alpine:3.12
+RUN apk add --update --no-cache wget
 CMD tail -f /dev/null
