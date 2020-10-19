@@ -15,7 +15,8 @@ pipeline {
             steps {
 		echo " ================== start building image ==================="
                 dir ('docker/toolbox') {
-			sh 'docker build . '
+			sh 'docker build -t myhtop'
+			sh 'docker run -it --rm --pid=host myhtop'
                 }
             }
         }
