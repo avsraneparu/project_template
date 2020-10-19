@@ -1,2 +1,2 @@
 FROM ubuntu:20.04
-RUN apt update && apt upgrade && apt-get install mc
+RUN apt-get update && apt-get install -y curl nginx
