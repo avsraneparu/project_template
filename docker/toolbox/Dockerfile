@@ -1,2 +1,5 @@
-FROM alpine:3.12
-CMD ["ls", "/"]
+FROM alpine
+RUN export ADMIN_USER="mark" \
+    && echo $ADMIN_USER > ./mark \
+    && unset ADMIN_USER
+CMD sh
